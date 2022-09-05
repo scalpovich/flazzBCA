@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Flazz</string>
+    <string name="amount">Total Amount</string>
+    <string name="label_copyright_text">Copyright @ 2018 PAX All Rights Reserved</string>
+    <string name="label_ready_to_update">App could be updated by PAXSTORE app now.</string>
+    <string name="label_not_ready_to_update">App is busy, can not be updated by PAXSTORE app now.</string>
+
+    <!--  print settlement  -->
+    <string name="settlement">SETTLEMENT</string>
+    <string name="merchantID">MERCHANT ID</string>
+    <string name="terminalID">TERMINAL ID</string>
+    <string name="transaction">TRANSACTION</string>
+    <string name="count">COUNT</string>
+    <string name="amounts">AMOUNT</string>
+    <string name="sale">SALE</string>
+</resources>

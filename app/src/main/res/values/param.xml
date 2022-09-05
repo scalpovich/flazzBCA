@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tid">MERC#EPJ00001</string>
+    <string name="mid">TERM#000885000151999</string>
+    <string name="SN">0820887749</string>
+    <string name="ip_port">10.141.0.14</string>
+    <string name="server_port">3003</string>
+    <string name="merchant">Nova Digital Perkasa</string>
+    <string name="alamat">Jl. H. R. Rasuna Said No.13, Kuningan, Kuningan Tim., Jakarta Selatan</string>
+    <string name="sams">80</string>
+    <string name="edc">INGENICO</string>
+
+
+</resources>

@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:pathData="m245.672,0 l-22.5,45 22.5,45c24.855,0 45,-20.148 45,-45s-20.145,-45 -45,-45zM245.672,0"
+      android:fillColor="#163f69"/>
+  <path
+      android:pathData="m200.672,45c0,24.852 20.148,45 45,45v-90c-24.852,0 -45,20.148 -45,45zM200.672,45"
+      android:fillColor="#085aae"/>
+  <path
+      android:pathData="m166.648,85.297c0,24.852 -20.145,45 -45,45 -24.852,0 -45,-20.148 -45,-45s20.148,-45 45,-45c24.855,0 45,20.148 45,45zM166.648,85.297"
+      android:fillColor="#0a77e8"/>
+  <path
+      android:pathData="m90,190.797c0,24.852 -20.148,45 -45,45s-45,-20.148 -45,-45 20.148,-45 45,-45 45,20.148 45,45zM90,190.797"
+      android:fillColor="#0f9af0"/>
+  <path
+      android:pathData="m90,321.203c0,24.852 -20.148,45 -45,45s-45,-20.148 -45,-45 20.148,-45 45,-45 45,20.148 45,45zM90,321.203"
+      android:fillColor="#0f9af0"/>
+  <path
+      android:pathData="m166.648,426.703c0,24.852 -20.145,45 -45,45 -24.852,0 -45,-20.148 -45,-45s20.148,-45 45,-45c24.855,0 45,20.148 45,45zM166.648,426.703"
+      android:fillColor="#13bdf7"/>
+  <path
+      android:pathData="m245.672,422 l-22.5,45 22.5,45c24.855,0 45,-20.148 45,-45s-20.145,-45 -45,-45zM245.672,422"
+      android:fillColor="#13bdf7"/>
+  <path
+      android:pathData="m200.672,467c0,24.852 20.148,45 45,45v-90c-24.852,0 -45,20.148 -45,45zM200.672,467"
+      android:fillColor="#18e0ff"/>
+  <path
+      android:pathData="m414.695,426.703c0,24.852 -20.148,45 -45,45 -24.852,0 -45,-20.148 -45,-45s20.148,-45 45,-45c24.852,0 45,20.148 45,45zM414.695,426.703"
+      android:fillColor="#18e0ff"/>
+  <path
+      android:pathData="m491.348,321.203c0,24.852 -20.148,45 -45,45 -24.855,0 -45,-20.148 -45,-45s20.145,-45 45,-45c24.852,0 45,20.148 45,45zM491.348,321.203"
+      android:fillColor="#65eaff"/>
+  <path
+      android:pathData="m491.348,190.797c0,24.852 -20.148,45 -45,45 -24.855,0 -45,-20.148 -45,-45s20.145,-45 45,-45c24.852,0 45,20.148 45,45zM491.348,190.797"
+      android:fillColor="#b2f5ff"/>
+</vector>

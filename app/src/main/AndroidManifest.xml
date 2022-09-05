@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ndp.flazzbca">
+
+    <uses-permission android:name="com.pax.permission.ICC" />
+    <uses-permission android:name="com.pax.permission.PICC" />
+    <uses-permission android:name="com.pax.permission.MAGCARD" />
+    <uses-permission android:name="com.pax.permission.PRINTER" />
+    <uses-permission android:name="com.pax.permission.PED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+    <application
+        android:name=".base.DemoApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlazzBCA">
+        <activity
+            android:name=".menu.Settelment"
+            android:exported="false"
+            android:theme="@style/Theme.FlazzBCANoAction" />
+        <activity
+            android:name=".menu.PrintTransaksi"
+            android:exported="true"
+            android:theme="@style/Theme.FlazzBCANoAction"/>
+        <activity
+            android:name=".menu.Saldo"
+            android:exported="false"
+            android:theme="@style/Theme.FlazzBCANoAction" />
+        <activity
+            android:theme="@style/Theme.FlazzBCANoAction"
+            android:name=".menu.PiccDetect"
+            android:exported="true" />
+        <activity
+            android:name=".menu.Amount"
+            android:exported="false"
+            android:theme="@style/Theme.FlazzBCANoAction" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Paxstore.DownloadParamService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sdk.service.ACTION_TO_DOWNLOAD_PARAMS"/>
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".Paxstore.DownloadParamReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.paxstore.mpush.NOTIFY_DATA_MESSAGE_RECEIVED" />
+                <action android:name="com.paxstore.mpush.DATA_MESSAGE_RECEIVED" />
+                <action android:name="com.paxstore.mpush.NOTIFICATION_MESSAGE_RECEIVED" />
+                <action android:name="com.paxstore.mpush.NOTIFY_MEDIA_MESSAGE_RECEIVED" />
+                <action android:name="com.paxstore.mpush.NOTIFICATION_CLICK" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Add below meta-data to support Cloud Message -->
+<!--        <meta-data android:name="PAXVAS_CloudMessage"-->
+<!--            android:value="true"/>-->
+
+<!--        &lt;!&ndash; Add below meta-data to support GoInsight &ndash;&gt;-->
+<!--        <meta-data android:name="PAXVAS_Insight"-->
+<!--            android:value="true"/>-->
+<!--        <receiver android:name="com.ndp.flazzbca.Paxstore.DownloadParamReceiver"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.sdk.service.ACTION_TO_DOWNLOAD_PARAMS"/>-->
+<!--                <category android:name="${applicationId}" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+<!--        <service android:name="com.ndp.flazzbca.Paxstore.DownloadParamService"/>-->
+    </application>
+
+</manifest>
